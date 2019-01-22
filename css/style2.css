@@ -202,3 +202,8 @@ button {
     cursor: pointer;
     background-color: rgb(73, 106, 252);
   }
+
+  a {
+      color: white;
+      text-decoration: none;
+  }
