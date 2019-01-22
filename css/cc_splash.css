@@ -1,0 +1,11 @@
+.media__logo {
+  display: block;
+  height: auto;
+  width: 80%;
+  margin: 0 auto; 
+  background-color: black;
+}
+
+.media__logo {
+    max-width: 700px; 
+}

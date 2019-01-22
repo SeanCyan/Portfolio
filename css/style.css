@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+ }
+
+ body {
+   font-family:  'Josefin Sans', sans-serif;
+ }
+
+/* navbar */
+/* mobile */
+
+.nav-links,
+#logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar {
+  font-size: 18px;
+  padding-bottom: 10px;
+  position: relative;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.616);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.main-nav li:first-of-type {
+  margin-top: 50px;
+}
+
+#logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#navbar-toggle {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  cursor: pointer;
+  color: rgba(255,255,255,0.8);
+  font-size: 24px;
+}
+
+/* desktop */
+
+@media all and (min-width: 768px) {
+
+  #navbar-toggle {
+    display: none;
+  }
+
+  .navbar {
+  display: flex;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.418);
+  width: 100%;
+  max-width: 1800px;
+  justify-content: space-between;
+  padding-bottom: 0px;
+  height: 50px;
+  align-items: center;
+  z-index: 10;
+ }
+
+ .main-nav {
+  display: flex !important;
+  margin-right: 80px;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0);
+ }
+
+ .main-nav li {
+  margin: 0;
+ }
+
+ .main-nav li:first-of-type {
+  margin-top: 0px;
+}
+
+ .nav-links {
+  margin-left: 40px;
+ }
+
+ #logo {
+   margin-top: 0;
+ }
+
+ #logo:hover,
+ .nav-links:hover {
+  color: rgba(255,255,255,1);
+  cursor: pointer;
+ }
+}
+
+
+/* Paralax Background */
+
+.paralax {
+  position: relative;
+  background-image: url('../img/book2.jpg');
+  height: 100vh;
+  max-width: 1800px;
+  margin: 0 auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  max-width: 500px;
+  width:80%;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* tiles & overlays */
+
+.tile {
+  display: block;
+  font-size: 0;
+}
+
+.tile img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tile_overlay {
+  position: absolute;
+  top: 0; left: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  transition: ease-in .2s;
+  text-align: center;
+  color: white;
+}
+
+.tile_overlay:hover,
+.tile_overlay:active {
+  opacity: 1;
+}
+
+.overlay_content {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.overlay_content>h2 {
+  font-size: 1.35em;
+}
+
+.overlay_content p {
+  display: none;
+}
+
+.line {
+  border-bottom: 1px solid white;
+  width: 0px;
+  margin: 10px auto;
+  transition: all 0.5s linear;
+  transition-delay: 0.3s;
+}
+
+.tile_overlay:hover .line,
+.tile_overlay:active .line {
+  width: 100px;
+}
+
+button {
+  width: 60px;
+  margin: 10px 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, .5);
+}
+
+button:hover,
+button:active {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255);
+}
+
+button>a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.purple {
+  background-color: rgba(111, 0, 255, 0.8);
+}
+
+.red {
+  background-color: rgba(255, 0, 76, 0.8);
+}
+
+.blue {
+  background-color: rgba(51, 133, 228, 0.8);
+}
+
+@media all and (min-width: 768px) {
+
+  .overlay_content {
+    width: 50%;
+  }
+
+  .overlay_content>h2 {
+    font-size: 2em;
+  }
+
+  .overlay_content p {
+    display: block;
+  }
+
+}
+
+/* skills section */
+
+.skills {
+  color: white;
+  background-image: url("../img/landscapep.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.skills h1,
+.skills h2 {
+  margin: 20px 0 10px;
+}
+
+.skills h1 {
+  font-family: 'Oleo Script', cursive;
+  font-size: 2.5em;
+}
+
+.skills h2 {
+  font-size: 1.5em;
+}
+
+.skills img {
+  width: 40px;
+  height: 40px;
+  margin: 10px 10px;
+}
+
+/* footer */
+
+.footer h2 {
+  position: relative;
+  margin: 20px 50px 10px;
+  font-size: 1.5em;
+}
+
+.contact {
+  position: absolute;
+  display: flex;
+  flex-direction:row;
+  margin-left: 50px;
+
+}
+
+.contact img {
+  height: 20px;
+  width: 20px;
+}
+
+.contact a {
+  margin: 0 10px 20px 0;
+}
+
+.contact a {
+  text-decoration: none;
+  color: black;
+}
