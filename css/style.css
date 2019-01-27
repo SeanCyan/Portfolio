@@ -116,7 +116,7 @@
 
 .paralax {
   position: relative;
-  background-image: url('../img/book2.jpg');
+  background-image: url('../img/snowmount.jpg');
   height: 100vh;
   max-width: 1800px;
   margin: 0 auto;
@@ -124,6 +124,31 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.gradient {
+  background: linear-gradient(268deg, #ff004cad, #574bffad);
+  background-size: 200% 200%;
+  height: 100%;
+  width: 100%;
+  -webkit-animation: Wave 15s ease infinite;
+  -moz-animation: Wave 15s ease infinite;
+  animation: Wave 15s ease infinite;
+}
+@-webkit-keyframes Wave {
+  0%{background-position:0% 48%}
+  50%{background-position:100% 53%}
+  100%{background-position:0% 48%}
+}
+@-moz-keyframes Wave {
+  0%{background-position:0% 48%}
+  50%{background-position:100% 53%}
+  100%{background-position:0% 48%}
+}
+@keyframes Wave {
+  0%{background-position:0% 48%}
+  50%{background-position:100% 53%}
+  100%{background-position:0% 48%}
 }
 
 .logo {
