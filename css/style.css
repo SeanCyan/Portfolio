@@ -260,15 +260,27 @@ button>a {
 @media all and (min-width: 768px) {
 
   .overlay_content {
+    width: 80%;
+  }
+
+  .overlay_content>h2 {
+    font-size: 1.25em;
+  }
+
+  .overlay_content p {
+    display: block;
+  }
+
+}
+
+@media all and (min-width: 1050px) {
+
+  .overlay_content {
     width: 50%;
   }
 
   .overlay_content>h2 {
     font-size: 2em;
-  }
-
-  .overlay_content p {
-    display: block;
   }
 
 }
