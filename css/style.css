@@ -14,7 +14,7 @@
 .nav-links,
 #logo {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .navbar {
@@ -29,7 +29,7 @@
   list-style-type: none;
   display: none;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.616);
+  background-color: rgba(0, 0, 0, 0.24);
 }
 
 .main-nav li {
@@ -70,7 +70,7 @@
   .navbar {
   display: flex;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.418);
+  background-color: rgb(255, 255, 255);
   width: 100%;
   max-width: 1800px;
   justify-content: space-between;
@@ -106,7 +106,6 @@
 
  #logo:hover,
  .nav-links:hover {
-  color: rgba(255,255,255,1);
   cursor: pointer;
  }
 }
@@ -116,7 +115,8 @@
 
 .paralax {
   position: relative;
-  background-image: url('../img/snowmount.jpg');
+  background-image: url('../img/cityscape.png');
+  background-color: #ffffff;
   height: 100vh;
   max-width: 1800px;
   margin: 0 auto;
@@ -127,7 +127,7 @@
 }
 
 .gradient {
-  background: linear-gradient(268deg, #ff004cad, #574bffad);
+  background: linear-gradient(268deg, #1b1b1bad, #222224ad);
   background-size: 200% 200%;
   height: 100%;
   width: 100%;
@@ -151,6 +151,38 @@
   100%{background-position:0% 48%}
 }
 
+.introContainer {
+  position: absolute;
+  bottom:40px;
+  padding:0 20px;
+  width:100%;
+}
+
+.introContainer .introNameStyle {
+  font-size:36px;
+  line-height:40px;
+  color:#ffffff;
+  letter-spacing:2px;
+  padding-bottom:20px;
+}
+
+.introContainer .introNameStyle span {
+  color:#ff004c6c;
+}
+
+.introContainer .introCopyStyle {
+  font-size:16px;
+  line-height:20px;
+  color:#ffffff;
+  letter-spacing:2px;
+  padding-top:20px;
+}
+
+.nameContainer {
+  border-bottom:1px solid #ffffff;
+}
+
+
 .logo {
   max-width: 500px;
   width:80%;
@@ -162,6 +194,30 @@
 @media all and (min-width: 768px) {
   .paralax {
     background-attachment: fixed;
+  }
+
+
+  .introContainer {
+    position: absolute;
+    bottom:50px;
+    left: 50px;
+    width:60%;
+  }
+  
+  .introContainer .introNameStyle {
+    font-size:56px;
+    line-height:60px;
+    color:#ffffff;
+    letter-spacing:2px;
+    padding-bottom:20px;
+  }
+  
+  .introContainer .introCopyStyle {
+    font-size:22px;
+    line-height:26px;
+    color:#ffffff;
+    letter-spacing:2px;
+    padding-top:20px;
   }
 }
 
@@ -232,7 +288,15 @@ button {
   color: rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, .5);
 }
-
+button.buttonLg {
+  width: 120px;
+  margin: 10px 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, .5);
+}
 button:hover,
 button:active {
   cursor: pointer;
@@ -250,7 +314,7 @@ button>a {
 }
 
 .red {
-  background-color: rgba(255, 0, 76, 0.8);
+  background-color: #ff004ccc;
 }
 
 .blue {
@@ -269,6 +333,8 @@ button>a {
 
   .overlay_content p {
     display: block;
+    line-height:20px;
+    padding: 10px 0;
   }
 
 }
