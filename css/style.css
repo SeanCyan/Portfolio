@@ -55,7 +55,7 @@
   transform: translateX(-50%);
 
   cursor: pointer;
-  color: rgba(255,255,255,0.8);
+  color: rgba(0, 0, 0, 0.8);
   font-size: 24px;
 }
 
@@ -115,7 +115,7 @@
 
 .paralax {
   position: relative;
-  background-image: url('../img/cityscape.png');
+  background:url('../img/colorBar2.jpg');
   background-color: #ffffff;
   height: 100vh;
   max-width: 1800px;
@@ -126,15 +126,7 @@
   background-size: cover;
 }
 
-.gradient {
-  background: linear-gradient(268deg, #1b1b1bad, #222224ad);
-  background-size: 200% 200%;
-  height: 100%;
-  width: 100%;
-  -webkit-animation: Wave 15s ease infinite;
-  -moz-animation: Wave 15s ease infinite;
-  animation: Wave 15s ease infinite;
-}
+
 @-webkit-keyframes Wave {
   0%{background-position:0% 48%}
   50%{background-position:100% 53%}
@@ -151,36 +143,6 @@
   100%{background-position:0% 48%}
 }
 
-.introContainer {
-  position: absolute;
-  bottom:40px;
-  padding:0 20px;
-  width:100%;
-}
-
-.introContainer .introNameStyle {
-  font-size:36px;
-  line-height:40px;
-  color:#ffffff;
-  letter-spacing:2px;
-  padding-bottom:20px;
-}
-
-.introContainer .introNameStyle span {
-  color:#ff004c6c;
-}
-
-.introContainer .introCopyStyle {
-  font-size:16px;
-  line-height:20px;
-  color:#ffffff;
-  letter-spacing:2px;
-  padding-top:20px;
-}
-
-.nameContainer {
-  border-bottom:1px solid #ffffff;
-}
 
 
 .logo {
@@ -191,35 +153,44 @@
   transform: translate(-50%, -50%);
 }
 
-@media all and (min-width: 768px) {
   .paralax {
     background-attachment: fixed;
   }
 
-
+.homeContent {
+  display: flex;
+  position: absolute;
+  top: 50%; 
+  transform:translateY(-50%);
+  justify-content: space-between;
+  padding: 0 40px;
+}
   .introContainer {
-    position: absolute;
-    bottom:50px;
-    left: 50px;
+    padding-top: 250px;
+    padding-right:50px;
     width:60%;
   }
-  
+  .profilePic {
+
+   right:80px;top:150px;
+   width: 750px; 
+   margin: 0 auto 0;
+  }
   .introContainer .introNameStyle {
     font-size:56px;
     line-height:60px;
-    color:#ffffff;
+    color:#333333;
     letter-spacing:2px;
     padding-bottom:20px;
   }
   
   .introContainer .introCopyStyle {
     font-size:22px;
-    line-height:26px;
-    color:#ffffff;
+    line-height:28px;
+    color:#333333;
     letter-spacing:2px;
     padding-top:20px;
   }
-}
 
 /* tiles & overlays */
 
@@ -409,4 +380,44 @@ button>a {
 .contact a {
   text-decoration: none;
   color: black;
+}
+
+@media all and (max-width: 1024px) {
+  .homeContent {
+    flex-direction: column-reverse;
+    display: flex;
+    position: absolute;
+    top: 50%; transform:translateY(-50%);
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+    .introContainer {
+      padding: 20px 0px 0;
+      width:100%;
+    }
+    .profilePicContainer {
+      width:100%;
+      margin:0 auto;
+    }
+    .profilePic {
+      display:block;
+     width:70%;
+     max-width: 500px; 
+     margin: 0 auto 0;
+    }
+    .introContainer .introNameStyle {
+      font-size:30px;
+      line-height:36px;
+      color:#333333;
+      letter-spacing:2px;
+      padding-bottom:20px;
+    }
+    
+    .introContainer .introCopyStyle {
+      font-size:14px;
+      line-height:20px;
+      color:#333333;
+      letter-spacing:2px;
+      padding-top:0px;
+    }
 }
