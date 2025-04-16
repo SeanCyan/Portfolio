@@ -20,26 +20,46 @@
   height:100vh;
   width:50vw;
   background:url('../img/emrLv2.jpg');
+  background-position: center center;
+  background-size:cover;
   transition: all 0.3s ease-out;
 }
 .emrContainer:hover {
-  height:100vh;
-  width:50vw;
   background:url('../img/emrDv2.jpg');
+  background-position: center center;
+  background-size:cover;
 }
 .onsiteContainer {
   height:100vh;
   width:50vw;
   background:url('../img/onsLv2.jpg');
+  background-position: center center;
+  background-size:cover;
   transition: all 0.3s ease-out;
 }
 .onsiteContainer:hover {
-  height:100vh;
-  width:50vw;
   background:url('../img/onsDv2.jpg');
+  background-position: center center;
+  background-size:cover;
 }
 .emrContainer a {
   display:block;
   height:100%;
   text-decoration:none;
+}
+
+@media all and (max-width: 900px) {
+  .flexContainer {
+    flex-direction: column;
+  }
+  .emrContainer {
+    height:50vh;
+    width:100vw;
+    transition: all 0.3s ease-out;
+  }
+  .onsiteContainer {
+    height:50vh;
+    width:100vw;
+    transition: all 0.3s ease-out;
+  }
 }
