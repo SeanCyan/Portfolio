@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+ }
+
+ body {
+   font-family:  'Josefin Sans', sans-serif;
+   width: 100%;
+   margin: 0 auto;
+ }
+
+.flexContainer {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.emrContainer {
+  height:100vh;
+  width:50vw;
+  background:url('../img/emrLv2.jpg');
+  transition: all 0.3s ease-out;
+}
+.emrContainer:hover {
+  height:100vh;
+  width:50vw;
+  background:url('../img/emrDv2.jpg');
+}
+.onsiteContainer {
+  height:100vh;
+  width:50vw;
+  background:url('../img/onsLv2.jpg');
+  transition: all 0.3s ease-out;
+}
+.onsiteContainer:hover {
+  height:100vh;
+  width:50vw;
+  background:url('../img/onsDv2.jpg');
+}
+.emrContainer a {
+  display:block;
+  height:100%;
+  text-decoration:none;
+}
