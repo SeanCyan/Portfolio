@@ -14,7 +14,7 @@
 .nav-links,
 #logo {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .navbar {
@@ -23,13 +23,14 @@
   position: relative;
   top: 0;
   background-color: rgba(0, 0, 0, 0);
+  z-index: 9999;
 }
 
 .main-nav {
   list-style-type: none;
   display: none;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.24);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main-nav li {
@@ -70,7 +71,7 @@
   .navbar {
   display: flex;
   position: fixed;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255,0.4);
   width: 100%;
   max-width: 1800px;
   justify-content: space-between;
@@ -98,6 +99,7 @@
 
  .nav-links {
   margin-left: 40px;
+  color:#333333;
  }
 
  #logo {
