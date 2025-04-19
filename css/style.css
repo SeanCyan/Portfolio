@@ -222,6 +222,9 @@
 .tile_overlay:active {
   opacity: 1;
 }
+.tile_overlay:hover + img[src*="ccTile"] {
+  opacity:0.7;
+}
 
 .overlay_content {
   position: absolute;
@@ -283,15 +286,15 @@ button>a {
 }
 
 .purple {
-  background-color: rgba(111, 0, 255, 0.8);
+  background-color: rgba(111, 0, 255, 0.7);
 }
 
 .red {
-  background-color: #ff004ccc;
+  background-color: #ff004c59;
 }
 
 .blue {
-  background-color: rgba(51, 133, 228, 0.8);
+  background-color: rgba(51, 133, 228, 0.4);
 }
 
 @media all and (min-width: 768px) {
