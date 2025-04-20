@@ -286,7 +286,7 @@ button>a {
 }
 
 .purple {
-  background-color: rgba(111, 0, 255, 0.7);
+  background-color: rgba(111, 0, 255, 0.5);
 }
 
 .red {
@@ -305,12 +305,14 @@ button>a {
 
   .overlay_content>h2 {
     font-size: 1.25em;
-  }
+    text-shadow: 2px 4px 4px rgba(29, 29, 29, 0.801);
+   }
 
   .overlay_content p {
     display: block;
     line-height:20px;
     padding: 10px 0;
+    text-shadow: 2px 4px 4px rgba(29, 29, 29, 0.801);
   }
 
 }
